@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.bg-container {
+  min-height: 100vh;
+  width: auto;
+  background-image: linear-gradient(to bottom, #fff1eb, #ace0f9);
+  display: flex;
+  justify-content: center;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+  max-width: 1110px;
+}
+.title {
+  font-family: 'Bree Serif';
+  margin-top: 40px;
+  margin-bottom: 48px;
+  font-size: 36px;
+  color: #1e293b;
+}
+.search-input-container {
+  width: 100%;
+  max-width: 250px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #7b8794;
+  padding: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.search-input {
+  font-size: 16px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  flex-grow: 1;
+}
+.search-icon {
+  height: 24px;
+  width: 24px;
+}
+.tabs-lists {
+  margin-top: 32px;
+  padding-left: 0px;
+  display: flex;
+  align-items: flex-end;
+}
+.apps-lists {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-left: 0;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .title {
+    margin-top: 96px;
+    font-size: 48px;
+  }
+  .search-input-container {
+    max-width: 480px;
+  }
+  .tabs-lists {
+    margin-top: 48px;
+  }
+}
